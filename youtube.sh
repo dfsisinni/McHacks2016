@@ -6,6 +6,7 @@ if [ -z "$var" ]
 	
 	query=$3;
 
+	rm output.txt;
 	$(java -jar Process.jar $query);
 	var=$(cat output.txt);
 	
@@ -20,7 +21,7 @@ if [ -z "$var" ]
 	#$(java -jar Process.jar $1);
 
 
-
+	rm output.html;
 	$(wget -o output.html "$var");
 	file=$(grep "Saving to" output.html | cut -d ' ' -f 3 | sed 's/^.\(.*\).$/\1/');
 	echo "File $file";
@@ -49,10 +50,11 @@ if [ -z "$var" ]
 		artist="N/A";
 	fi
 
-	youtube-dl -f bestaudio  $1 -o "~/Music/$name.$ext";
+	youtube-dl --extract-audio --audio-format mp3 --audio-quality 0  $1 -o "~/Music/$name.$ext";
+
 
 	sed -i.bak 's/<\/songs>//' library.xml
-	echo "<song><url>$1</url><name>$name</name><artist>$artist</artist><album></album><time>$timeVar</time><file>$name.$ext</file></song>" >> library.xml;
+	echo "<song><url>$1</url><name>$name</name><artist>$artist</artist><album></album><time>$timeVar</time><file>$name.mp3</file></song>" >> library.xml;
 	echo "</songs>" >> library.xml;
 
 	rm $file;

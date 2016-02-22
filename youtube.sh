@@ -32,7 +32,7 @@ if [ -z "$var" ]
 	name=$(grep -m 1 "colspan=\"2\" class=\"summary\" style=\"text-align:center;font-size:125%" $file | cut -d "\"" -f 8);
 	
 	if [ -z "$name" ]; then
-		name="N/A";
+		name=$2;
 	fi	
 
 	lineNum=$(grep -nm 1 "Length" $file | cut -d ':' -f 1);
@@ -55,6 +55,8 @@ if [ -z "$var" ]
 	echo "<song><url>$1</url><name>$name</name><artist>$artist</artist><album></album><time>$timeVar</time><file>$name.$ext</file></song>" >> library.xml;
 	echo "</songs>" >> library.xml;
 
+	rm $file;
+	rm output.html;
 
 
 else 

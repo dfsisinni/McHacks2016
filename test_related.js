@@ -1,0 +1,1 @@
+GET https://www.googleapis.com/youtube/v3/search?part=snippet&relatedToVideoId=5rOiW_xY-kc&type=video&key={"AIzaSyAjXKpbYwL4CFbXVtNbLKKE9cOrlrsI05Q"}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<title>Main</title>
+<link rel="stylesheet" type="text/css" href="scripts/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+
+<style>
+
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 5px solid #ddd;
+    border-right: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+    padding: 10px;
+}
+.navbar-default {
+  background-color: #4062ca;
+  border-color: #4062ca;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+</style>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="searchMenu.html">Search</a>
+      <a class="navbar-brand" href="Library.html">Library</a>
+      <a class="navbar-brand" href="PlayLists.html">Playlists</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</head>
+<body background="background.png" class = "animated bounceInDown">
+<!-- CONTAINERS -->
+<!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
+
+<div class="container-fluid">
+  <div class="row-fluid">
+<!-- jumbotron enlarges fonts and puts everything in a gray box with rounded corners. If jumbotron is outside a container it fills the total width. You can change the styles by placing the changes after the Bootstrap CDN link -->
+<!--<div class="jumbotron">-->
+
+<!-- BUTTONS -->
+<!-- There are many built in button colors and sizes. If a link is to trigger in page functionality it should use role="button". The button element should be used in most situations -->
+<div style="margin:0 auto; text-align:center;width:500px;margin-top: 400px"> 
+<h1><strong> Welcome!</strong></h1>
+</div> 
+<!--<a href="#" class = "btn btn-default btn-lg" role="button">More info</a>
+<button type="submit" class = "btn btn-danger" role = "button">Button</button>
+<input type="button" value="Info" class = "btn btn-info">
+-->
+
+<!-- DROP DOWN MENUS -->
+<!-- You can easily add a drop down menu with class dropdown, or dropup. Change button size with btn-lg, btn-sm, btn-xs
+ARIA stands for Accessible Rich Internet Applications and it is used to make apps more excessible for people with disabilities. aria-haspopup states that the element has a sub menu. aria-expanded defines if the sub-menu is expanded. Full list here http://www.w3.org/TR/wai-aria/states_and_properties#aria-expanded -->
+<!--<div class="dropdown">
+  <button class="btn btn-primary dropdown-toggle btn-lg" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" visibility:hidden>
+    Play
+    <span class="caret"></span>
+  </button>
+  <ul class="dropdown-menu">
+    <li class="dropdown-header"> </li>
+    <li><a href="#">Add to Queue</a></li>
+    <li><a href="#">Add to Library</a></li>
+  </ul>
+</div>
+-->
+</div><br>
+</div>
+<script> window.$ = window.jQuery = require("/home/dan/app/McHacks2016/scripts/jquery.min.js");
+        </script>
+        <script src="app.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=init"></script>
+<script src="scripts/bootstrap.js"></script>
+</body>
+</html>

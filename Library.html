@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<!-- If IE use the latest rendering engine -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="stylesheet" type="text/css" href="scripts/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="animate.css">
+
+<style>
+
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 5px solid #ddd;
+    border-right: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+    padding: 10px;
+}
+.navbar-default {
+  background-color: #4062ca;
+  border-color: #4062ca;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+.table-titles {
+	color: white;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #e2e2ea;
+  }
+}
+</style>
+
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+         <a class="navbar-brand" href="index.html">Home</a>
+        <a class="navbar-brand" href="searchMenu.html">Search</a>
+        <a class="navbar-brand" href="Playlists.html">Playlists</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+
+</head>
+<script src="scripts/jquery.js"></script>
+<script src="scripts/bootstrap.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="library.js"></script>
+<body background="background.png" class="animated pulse" onload="script()">
+  
+
+	
+	<div class="container">
+		<div class = "table-responsive">
+
+			<table id="demo" class="table table-titles">
+				<!--<head>
+					<!--<tr class = "table-titles">
+						<th>Name</th>
+						<th>Artist</th>
+						<th>Album</th>
+						<th>Time</th>
+					</tr>
+          </thead>
+
+          <tr>
+            <td><SPAN DATAFLD="name"></SPAN></td>
+            <td><SPAN DATAFLD="artist"></SPAN></td>
+            <td><SPAN DATAFLD="album"></SPAN></td>
+            <td><SPAN DATAFLD="time"></SPAN></td>
+          </tr>
+
+				!-->
+			</table>
+
+		</div>
+
+	</div>
+
+
+</body>
+
+
+
+</body>
+</html>

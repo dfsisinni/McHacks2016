@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<songs>
+
+<song><url>https://www.youtube.com/watch?v=QK8mJJJvaes</url><name>Thrift Shop</name><artist>Macklemore &amp; Ryan Lewis</artist><album></album><time>3:55</time><file>Thrift Shop.webm</file></song>
+
+
+
+<song><url>https://www.youtube.com/watch?v=Vysgv7qVYTo</url><name>Dynamite</name><artist>Taio Cruz</artist><album></album><time>3:22</time><file>Dynamite.webm</file></song>
+
+<song><url>https://www.youtube.com/watch?v=-LX7WrHCaUA</url><name>Dynamite</name><artist>Taio Cruz</artist><album></album><time>3:22</time><file>Dynamite.webm</file></song>
+
+<song><url>https://www.youtube.com/watch?v=y6Sxv-sUYtM</url><name>Dynamite</name><artist>Taio Cruz</artist><album></album><time>3:22</time><file>Dynamite.webm</file></song>
+
+<song><url>https://www.youtube.com/watch?v=CcCw1ggftuQ</url><name>Dynamite</name><artist>Taio Cruz</artist><album></album><time>3:22</time><file>Dynamite.webm</file></song>
+
+<song><url>https://www.youtube.com/watch?v=s4CFMrJyMbM</url><name>Wide Open Space</name><artist>Mansun</artist><album></album><time>4:31</time><file>Wide Open Space.webm</file></song>
+
+<<<<<<< HEAD
+<song><url>https://www.youtube.com/watch?v=fLexgOxsZu0</url><name>The Lazy Song</name><artist>Bruno Mars</artist><album></album><time></time><file>The Lazy Song.webm</file></song>
+
+<song><url>https://www.youtube.com/watch?v=YQHsXMglC9A</url><name>The Lazy Song</name><artist>Bruno Mars</artist><album></album><time></time><file>The Lazy Song.webm</file></song>
+
+<song><url>https://www.youtube.com/watch?v=9RCB-MC6QQY</url><name>The Lazy Song</name><artist>Bruno Mars</artist><album></album><time></time><file>The Lazy Song.webm</file></song>
+=======
+
+<song><url>https://www.youtube.com/watch?v=3x2ABSAMVno</url><name>Shot Me Down</name><artist>David Guetta</artist><album></album><time>3:11</time><file>Shot Me Down.webm</file></song>
+
+<song><url>https://www.youtube.com/watch?v=JGhoLcsr8GA</url><name>Downtown</name><artist>Macklemore &amp; Ryan Lewis</artist><album></album><time>N/A</time><file>Downtown.webm</file></song>
+
+<song><url>https://www.youtube.com/watch?v=O-zpOMYRi0w</url><name>Boys Like You</name><artist>Who Is Fancy</artist><album></album><time>N/A</time><file>Boys Like You.webm</file></song>
+
+<song><url>https://www.youtube.com/watch?v=lf_wVfwpfp8</url><name>Focus</name><artist>Ariana Grande</artist><album></album><time>N/A</time><file>Focus.webm</file></song>
+>>>>>>> 1b35e2e6f4f6bdd0cce885a5f5e29135681762e8
+</songs>

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<link rel="stylesheet" type="text/css" href="scripts/bootstrap.min.css">
+<style>
+
+
+.global-search {
+    text-align:center;
+    padding:100px;
+  }
+   .global-search * {
+    display:inline-block;
+    margin-bottom:0;
+  }
+
+   .global-search .form-control {
+      width:120px;
+  }
+
+   .global-search a {
+    display:block;
+    padding-top:10px;
+  }
+
+
+
+@media (min-width:400px){
+   .global-search {
+    padding: 20px 0;
+    text-align:center;
+    }
+
+   .global-search .form-control {
+    width:400px;
+   }
+
+}
+/* Adds borders for tabs */
+.tab-content {
+    border-left: 5px solid #ddd;
+    border-right: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+    padding: 10px;
+}
+.navbar-default {
+  background-color: #4062ca;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+
+.navbar-default .navbar-text {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ffbbbc;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #ffbbbc;
+  background-color: #e2e2ea;
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+  color: #ffbbbc;
+  background-color: #e2e2ea;
+}
+.navbar-default .navbar-toggle {
+  border-color: #e2e2ea;
+}
+.navbar-default .navbar-toggle:hover,
+.navbar-default .navbar-toggle:focus {
+  background-color: #e2e2ea;
+}
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #ecf0f1;
+}
+.navbar-default .navbar-collapse,
+.navbar-default .navbar-form {
+  border-color: #ecf0f1;
+}
+.navbar-default .navbar-link {
+  color: #ecf0f1;
+}
+.navbar-default .navbar-link:hover {
+  color: #ffbbbc;
+}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #ecf0f1;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffbbbc;
+  }
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffbbbc;
+    background-color: #e2e2ea;
+  }
+}
+</style>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="navbar-brand" href="Library.html">Library</a>
+      <a class="navbar-brand" href="Playlists.html">Playlists</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</head>
+<body background="background.png">
+<!-- CONTAINERS -->
+<!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
+
+<div class="container-fluid">
+  <div class="row-fluid">
+
+<p>
+<h1><strong><center>Welcome</center></strong></h1>
+<h3></strong><center>Select an option from the menu above</center></strong></h3>
+
+</p>
+
+ <form class="form-inline global-search" role="form">
+                <div class="form-group">
+                    <label class="sr-only" for="">Enter search terms</label>
+                    <input type="search" class="form-control" id="k" name="k" placeholder="Enter search terms">
+                    <input id="cn" name="cn" type="hidden" value="false" />
+                </div>
+                <button type="submit" id="s" class="btn btn-default">Search       <span class="glyphicon glyphicon-search"></span>
+
+
+            </form>
+</div>
+
+</div><br>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>

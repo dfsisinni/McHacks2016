@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<!-- If IE use the latest rendering engine -->
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Set the page to the width of the device and set the zoon level -->
+<meta name="viewport" content="width = device-width, initial-scale = 1">
+<link rel="stylesheet" type="text/css" href="scripts/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="animate.css">
+<style>
+
+   .global-search * {
+    display:inline-block;
+    margin-bottom:0;
+  }
+
+   .global-search .form-control {
+      width:120px;
+  }
+
+   .global-search a {
+    display:block;
+    padding-top:5px;
+  }
+
+@media (min-width:400px){
+   .global-search {
+    padding: 10px 0;
+    text-align:center;
+    }
+
+   .global-search .form-control {
+    width:400px;
+   }
+
+}
+ html, body {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+
+        }
+}
+  body {
+        display: table;
+        }
+/* Adds borders for tabs */
+.textSpace{
+  padding-left: 30px;
+  padding-top:300px;
+  padding-bottom: 30px;
+  padding-right: 30px; 
+}
+.tab-content {
+    border-left: 5px solid #ddd;
+    border-right: 5px solid #ddd;
+    border-bottom: 5px solid #ddd;
+    padding: 10px;
+}
+.navbar-default {
+  background-color: #4062ca;
+  border-color: #4062ca;
+}
+.navbar-default .navbar-brand {
+  color: #ecf0f1;
+}
+</style>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <a class="navbar-brand" href="Library.html">Library</a>
+      <a class="navbar-brand" href="PlayLists.html">Playlists</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</head>
+<body background="background.png" class = "animated bounceInDown">
+<!-- CONTAINERS -->
+<!-- container puts padding around itself while container-fluid fills the whole screen. Bootstap grids require a container. -->
+
+<div class="container-fluid">
+<div class = "textSpace">
+<h1><strong><center><big>Search Music</big></center></strong></h1>
+</div>
+</div>
+</div>
+<div class ="container">
+ <!--<form class="form-inline< global-search" role="form" action="#">
+    <div class="form-group">
+      <input type="text" class="form-control" name="keyword" id="k" placeholder="What song would you like to search for?">
+      <input type="button" class="btn btn-success" value="Find" onClick="submitform()"></input>
+      </div>
+  </form>
+</div>
+</div>-->
+<form action="#" class = "form-inline global-search" role ="form">
+  <p><input type="text" id="search" placeholder="What song would you like to search for: " autocomplete="off" class="form-control" /></p>
+  <p><input type="submit" value="Search" class="btn btn-success"></p>
+</form>
+<div id="results"></div>
+<script>
+window.$ = window.jQuery = require("/home/dane/Dropbox/McHacks/app/scripts/jquery.min.js");
+</script>
+<script src="scripts/bootstrap.js"></script>
+<script src="app.js"></script>
+<script src="https://apis.google.com/js/client.js?onload=init"></script>
+</body>
+</html>
